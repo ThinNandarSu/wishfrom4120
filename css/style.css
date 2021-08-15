@@ -1,45 +1,41 @@
-@import url("https://fonts.googleapis.com/css2?family=Titan+One&display=swap");
-
-*{
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+* {
     box-sizing: border-box;
 }
 
-
 body {
-    font-family:'Wendy One', sans-serif;
+    font-family: 'Wendy One', sans-serif;
     background-image: url("../img/bg1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-
     display: flex;
     justify-content: center;
     align-items: center;
-
     margin: 0;
     overflow: 0;
 }
 
 .container {
-    width: 800px;
-    height: 420px;
+    width: 900px;
+    height: 500px;
     padding: 10px;
     margin: 0 auto;
     position: relative;
 }
 
+
 /* For Balloon */
+
 .balloon {
     width: 738px;
     margin: 0 auto;
     padding-top: 30px;
     position: absolute;
-
     display: none;
 }
 
-
-.balloon > div {
+.balloon>div {
     width: 104px;
     height: 140px;
     background: rgba(182, 15, 97, 0.9);
@@ -48,11 +44,10 @@ body {
     margin: 0 auto;
     position: absolute;
     padding: 10px;
-    box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9); 
+    box-shadow: inset 17px 7px 10px rgba(182, 15, 97, 0.9);
 }
 
-
-.balloon > div:nth-child(1) {
+.balloon>div:nth-child(1) {
     background: rgba(193, 93, 142, 0.9);
     left: 0;
     box-shadow: inset 10px 10px 10px rgba(199, 158, 178, 0.9);
@@ -62,12 +57,11 @@ body {
     animation: balloon1 6s ease-in-out infinite;
 }
 
-.balloon > div:nth-child(1):before {
-    color: rgba(197, 159, 178 , 0.9);
+.balloon>div:nth-child(1):before {
+    color: rgba(197, 159, 178, 0.9);
 }
 
-
-.balloon > div:nth-child(2) {
+.balloon>div:nth-child(2) {
     background: rgba(242, 112, 45, 0.9);
     left: 120px;
     box-shadow: inset 10px 10px 10px rgba(222, 85, 14, 0.9);
@@ -77,10 +71,11 @@ body {
     animation: balloon2 6s ease-in-out infinite;
 }
 
-.balloon > div:nth-child(2):before {
+.balloon>div:nth-child(2):before {
     color: rgba(242, 112, 45, 0.9);
 }
-.balloon > div:nth-child(3) {
+
+.balloon>div:nth-child(3) {
     background: rgba(45, 181, 167, 0.9);
     left: 240px;
     box-shadow: inset 10px 10px 10px rgba(35, 140, 129, 0.9);
@@ -89,11 +84,12 @@ body {
     -o-animation: balloon4 6s ease-in-out infinite;
     animation: balloon4 6s ease-in-out infinite;
 }
-.balloon > div:nth-child(3):before {
+
+.balloon>div:nth-child(3):before {
     color: rgba(45, 181, 167, 0.9);
 }
 
-.balloon > div:nth-child(4) {
+.balloon>div:nth-child(4) {
     background: rgba(190, 61, 244, 0.9);
     left: 360px;
     box-shadow: inset 10px 10px 10px rgba(173, 14, 240, 0.9);
@@ -103,11 +99,11 @@ body {
     animation: balloon1 5s ease-in-out infinite;
 }
 
-.balloon > div:nth-child(4):before {
+.balloon>div:nth-child(4):before {
     color: rgba(190, 61, 244, 0.9);
 }
 
-.balloon > div:nth-child(5) {
+.balloon>div:nth-child(5) {
     background: rgba(180, 224, 67, 0.9);
     left: 480px;
     box-shadow: inset 10px 10px 10px rgba(158, 206, 34, 0.9);
@@ -117,11 +113,11 @@ body {
     animation: balloon3 5s ease-in-out infinite;
 }
 
-.balloon > div:nth-child(5):before {
+.balloon>div:nth-child(5):before {
     color: rgba(180, 224, 67, 0.9);
 }
 
-.balloon > div:nth-child(6) {
+.balloon>div:nth-child(6) {
     background: rgba(242, 194, 58, 0.9);
     left: 600px;
     box-shadow: inset 10px 10px 10px rgba(234, 177, 15, 0.9);
@@ -131,16 +127,16 @@ body {
     animation: balloon2 3s ease-in-out infinite;
 }
 
-.balloon > div:nth-child(6):before {
+.balloon>div:nth-child(6):before {
     color: rgba(242, 194, 58, 0.9);
 }
 
-.balloon > div:before {
+.balloon>div:before {
     color: rgba(182, 15, 97, 0.9);
     position: absolute;
     bottom: -11px;
     left: 52px;
-    content:"|";
+    content: "|";
     font-size: 1em;
 }
 
@@ -148,15 +144,14 @@ span {
     font-size: 4.8em;
     color: white;
     margin-left: -27px;
-
     position: relative;
     top: 30px;
     left: 50%;
-   
 }
 
 @keyframes balloon1 {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0) rotate(-6deg);
     }
     50% {
@@ -164,9 +159,9 @@ span {
     }
 }
 
-
 @keyframes balloon2 {
-    0%, 100% {
+    0%,
+    100% {
         transform: translateY(0) rotate(6deg);
     }
     50% {
@@ -174,9 +169,9 @@ span {
     }
 }
 
-
 @keyframes balloon3 {
-    0%, 100% {
+    0%,
+    100% {
         transform: translate(0, -10px) rotate(6eg);
     }
     50% {
@@ -185,7 +180,8 @@ span {
 }
 
 @keyframes balloon4 {
-    0%, 100% {
+    0%,
+    100% {
         transform: translate(10px, -10px) rotate(-8eg);
     }
     50% {
@@ -193,9 +189,11 @@ span {
     }
 }
 
+
 /* For Calendar */
+
 .calendar {
-    font-family: "Istok Web",sans-serif;
+    font-family: "Istok Web", sans-serif;
     background: white;
     width: 200px;
     height: 200px;
@@ -206,468 +204,600 @@ span {
     display: block;
     transform-origin: top center;
     animation: calendar_rotate 1s infinite linear alternate;
+}
 
-  }
-  .calendar:before {
+.calendar:before {
     content: '';
     border-left: 200px solid transparent;
     border-bottom: 30px solid rgba(0, 0, 0, 0.1);
     position: absolute;
     bottom: 0px;
-  }
-  
-  .month {
+}
+
+.month {
     color: white;
     background: #ff572280;
-    width: 100%;height: 40px;
+    width: 100%;
+    height: 40px;
     box-shadow: 0px 5px 5px #ddd;
     position: relative;
-  }
+}
 
-  .month:before {
+.month:before {
     content: '';
     background: #4d0000;
     width: 10px;
     height: 10px;
     box-shadow: 60px 0px 0px #4d0000;
     border-radius: 50%;
-
     position: absolute;
     left: 60px;
     top: 5px;
+}
 
-  }
-  .month:after {
+.month:after {
     content: '';
     width: 7px;
     height: 20px;
     background: #555;
     box-shadow: 0px -2px 0px #777, -1px 0px 2px #777, 0px 3px 0px #4d0000, 60px 0px 0px #555, 60px -2px 0px #777;
     border-radius: 20% 20% 0 0;
-
     position: absolute;
     left: 62px;
     top: -12px;
-  }
+}
 
-  .month .month-name {
+.month .month-name {
     padding-left: 10px;
     font-size: 20px;
     text-transform: uppercase;
     letter-spacing: 2px;
-
     position: absolute;
     bottom: 0;
-  }
-  
-  .number {
+}
+
+.number {
     font-size: 150px;
     color: #2d2d2d;
     font-weight: 700;
     text-align: center;
     margin-top: -25px;
-  }
+}
 
-  @keyframes calendar_rotate{
-        0% {
-          transform: rotate(0deg);
-        }
-        25% {
-           transform:rotate(10deg);
-        }
-        50% {
-           transform:rotate(0deg)
-        }
-        75% {
-           transform:rotate(-10deg);
-        }
-        100% {
-          transform: rotate(0deg);
-        }
+@keyframes calendar_rotate {
+    0% {
+        transform: rotate(0deg);
     }
-
-
-    /* TYPING */
-    .typedtext{
-        font-family: 'Waiting for the Sunrise', cursive; 
-        font-size:30px; 
-        color: #565020;
-        margin: 210px 50px; 
-        letter-spacing: 6px; 
-        font-weight: bold;
-        display: none;
+    25% {
+        transform: rotate(10deg);
     }
-
-
-    /* COUNT DOWN NUMBER  */
-    .countdownnum{
-        background: url("../img/countdown.gif");
-        background-repeat: no-repeat;
-        width: 350px;
-        height: 300px;
-       
-        display: none;
-        margin: 60px 150px;
-        transform-origin: top center;
-
-        position: absolute;
-        top: 0;
-        left:0;
-
+    50% {
+        transform: rotate(0deg)
     }
-
-    /* Heart Btn */
-    .heart-btn { 
-        margin: 0;
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        display: none;
-        transform: translate(-50%,-50%);
+    75% {
+        transform: rotate(-10deg);
     }
-      
-    .btn {
-        padding: 15px;
-        font-weight: 700;
-        font-size: 2rem;
-        text-decoration: none;
-        transition: all .5s ease; 
-      }
-      
-    .btn--heart {
-        font-family:'Wendy One', sans-serif;
-        color: #fdf9f1;
-        padding-right: 0;
-        border-radius: 20px;
-        background-color: #5a5ab996;;
-        -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 70%, 90% 100%, 0% 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 50%, 75% 100%, 0 100%);
+    100% {
+        transform: rotate(0deg);
     }
-      
-    .btn--heart:hover { 
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);  
-    }
-      
-    .btn--heart:after {
-        content: "\f004";
-        font-family: FontAwesome;
-        color: #b6e6e6;
-        display: inline-block;
-        position: relative;
-        right: -55px;
-        transition: all 0.2s ease;
-    }
-      
-    .btn--heart:hover:after {
-        margin: -5px 15px;
-        right: 0px;
-    }
-    
-
-    /* BANNER */
-    .banner img{
-        margin: 0;
-        width: 50%;
-        height: 50%;
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-
-        overflow: hidden;
-
-        display: none;
-
-        animation-name: banner;
-        animation-duration: 6s;
-        animation-timing-function: linear;
-    }
-
-   
-
-    @keyframes banner {
-        0%{
-            top: -50%;
-            transform: translate(-50%,-50%);
-        }
-        33%{
-            top: 20%;
-            transform: translate(-50%,-50%);
-        }
-        66% {
-            top: 23%;
-            transform: translate(-50%,-50%) rotate(-10deg);
-        }
-
-        97% {
-            top: 25%;
-            transform: translate(-50%,-50%) rotate(10deg);
-        }
-
-        99% {
-            top: 25%;
-            transform: translate(-50%,-50%) rotate(-10deg);
-        }
-
-        100% {
-            top: 25%;
-            transform: translate(-50%,-50%) rotate(10deg);
-        }
-    }
-
-    /* CAT  */
-    .cat img{
-        background-repeat: no-repeat;
-        width: 350px;
-        height: 300px;
-       
-        display: none;
-        /* margin: 60px 150px; */
-        /* transform-origin: top center; */
-        position: absolute;
-        bottom: 0%;
-        left:80%;   
-
-        animation-name: cat;
-        animation-duration: 6s;
-        animation-timing-function: linear;
-    }
-
-    @keyframes cat{
-        0%{
-            bottom: -50%;
-        }
-        50%{
-            bottom: 20%;
-        }
-        100%{
-            bottom: 35%;
-        }
-    }
-
-    .streamer{
-        background-image: url("../img/confetti.gif");
-        width: 100%;
-        height: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-    
-        display: none;
-    }
-
-    /* Photo Swing */
-    .swing {
-        margin: 0px 0px;
-        box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
-        float:left;
-        display: none;
-        transform-origin: center -20px;
-        animation: swing ease-in-out 1s infinite alternate;
-       
-    }
-
-    .swing img {
-        border: 5px solid #f8f8f8;
-        display: block;
-    }
-
-    .swing:after{
-        content: '';
-        width: 20px; 
-        height: 20px;  
-        border: 1px solid #999;
-
-        position: absolute;  
-        top: -10px; 
-        left: 50%;
-
-        z-index: 0;
-        border-bottom: none;
-        border-right: none;
-        transform: rotate(45deg);
-    }
-    /* nail */
-    .swing:before{
-        content: '';
-        border-radius: 50% 50%;
-        background: #000;
-        width: 5px; 
-        height: 5px;
-
-        position: absolute;
-        top: -14px;
-        left: 54%;
-
-        z-index: 5;
-       
-    }
-     
-    @keyframes swing {
-        0% { 
-            transform: rotate(3deg);
-        }
-        100% { 
-            transform: rotate(-3deg);
-        }
-    }
+}
 
 
-    /* Cake  */
-    .cake img{
-        width: 200px;
-        height: 200px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
+/* TYPING */
 
-        display: none;
-
-        animation: cake ease-in-out 1s linear;
-    }
-
-
-    @keyframes cake {
-        0% { 
-            left: -20%;
-        }
-        50%{
-            left: 30%;
-        }
-        100% { 
-            left: 41%;
-        }
-    }
-
-    /* Butterfly effect  */
-    .butterfly img{
-        width: 200px;
-        height: 200ox;
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        display: none;
-    }
+.typedtext {
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 30px;
+    color: #565020;
+    margin: 210px 50px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    display: none;
+}
 
 
-    /* Wish TYPING */
-    .wishmesg{
-        font-family: 'Waiting for the Sunrise', cursive; 
-        color: #565020;
-        font-size:30px; 
-        letter-spacing: 6px; 
-        font-weight: bold;
+/* COUNT DOWN NUMBER  */
 
-        position: absolute;
-        left: 30%;
-        top: 10%;
-        
-        display: none;
-    }
+.countdownnum {
+    background: url("../img/countdown.gif");
+    background-repeat: no-repeat;
+    width: 350px;
+    height: 300px;
+    display: none;
+    margin: 60px 150px;
+    transform-origin: top center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-    /* Button Shine Loading */
-    .btn-shine {
-        font-family: 'Waiting for the Sunrise', cursive; 
-        font-size: 22px;
-        font-weight: 600;
-        padding: 12px 48px;
-        color: #fff;
-        background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
-        background-position: 0;
 
-        display: none;
-         
-        text-decoration: none;
-        white-space: nowrap;
+/* Heart Btn */
 
-        position: absolute;
-        top: 50%;
-        left: 50%;
+.heart-btn {
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: none;
+    padding: 15px;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+.btn--heart {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #e9e6ef;
+    padding-right: 0;
+    border-radius: 20px;
+    background-color: #5a5ab996;
+    -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 70%, 90% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 75% 100%, 0 100%);
+}
+
+.btn--heart:hover {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+}
+
+.btn--heart:after {
+    content: "\f004";
+    font-family: FontAwesome;
+    color: #b6e6e6;
+    display: inline-block;
+    position: relative;
+    right: -55px;
+    transition: all 0.2s ease;
+}
+
+.btn--heart:hover:after {
+    margin: -5px 15px;
+    right: 0px;
+}
+
+
+/* BANNER */
+
+.banner img {
+    margin: 0;
+    width: 50%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    display: none;
+    animation-name: banner;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+@keyframes banner {
+    0% {
+        top: -50%;
         transform: translate(-50%, -50%);
-       
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        animation: shine 3s infinite linear;
-        animation-fill-mode: forwards;
-        -webkit-text-size-adjust: none;
-       
-      }
-     
-      @keyframes shine {
-        0% {
-          background-position: 0;
-        }
-        60% {
-          background-position: 180px;
-        }
-        100% {
-          background-position: 180px;
-        }
-      }
-
-      /* Happy 30 Text  */
-      .hbwrapper{
-        display: none;
-        position: absolute;
-        top: 0;
-        left: 18%;
-      }
-
-      .hbwrapper span {
-        font-size: 100px;
-        display: inline-block;
-        font-family: "Titan One", cursive;
-        color: #fff;
-        text-shadow: 0 0px #f3c623, 0 0px #f2aaaa;
-        
-        transform: translate(0, 100%) rotate(4deg);
-        animation: jump 2s ease-in-out infinite;
-        -webkit-text-stroke-width: 1.25px;
-        -webkit-text-stroke-color: #000;
-      }
-
-      .hbwrapper span:nth-child(1) {
-        animation-delay: 120ms;
-      }
-      .hbwrapper span:nth-child(2) {
-        animation-delay: 240ms;
-      }
-      .hbwrapper span:nth-child(3) {
-        animation-delay: 360ms;
-      }
-      .hbwrapper span:nth-child(4) {
-        animation-delay: 480ms;
-      }
-      .wrapper span:nth-child(5) {
-        animation-delay: 600ms;
-      }
-      .hbwrapper span:nth-child(6) {
-        animation-delay: 720ms;
-      }
-      .hbwrapper span:nth-child(7) {
-        animation-delay: 840ms;
-      }
-      
-      @keyframes jump {
-        33% {
-          text-shadow: 0 60px #f37121, 0 150px #f2aaaa;
-        }
-        50% {
-          transform: translate(0, 0) rotate(-4deg);
-          text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
-        }
-        66.67% {
-          text-shadow: 0 -60px #d54062, 0 -150px #8fc0a9;
-        }
-      }
-
-   
+    }
+    33% {
+        top: 20%;
+        transform: translate(-50%, -50%);
+    }
+    66% {
+        top: 23%;
+        transform: translate(-50%, -50%) rotate(-10deg);
+    }
+    97% {
+        top: 25%;
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+    99% {
+        top: 25%;
+        transform: translate(-50%, -50%) rotate(-10deg);
+    }
+    100% {
+        top: 25%;
+        transform: translate(-50%, -50%) rotate(10deg);
+    }
+}
 
 
-     
-    
-    
-  
+/* CAT  */
+
+.cat img {
+    width: 300px;
+    height: 250px;
+    display: none;
+    position: absolute;
+    bottom: 0%;
+    left: 80%;
+    animation-name: cat;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+}
+
+@keyframes cat {
+    0% {
+        bottom: 0%;
+    }
+    50% {
+        bottom: 20%;
+    }
+    100% {
+        bottom: 35%;
+    }
+}
+
+.streamer {
+    background-image: url("../img/confetti.gif");
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
 
 
+/* Photo Swing */
+
+.swing {
+    margin: 0px 0px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    float: left;
+    display: none;
+    transform-origin: center -20px;
+    animation: swing ease-in-out 1s infinite alternate;
+}
+
+.swing img {
+    border: 5px solid #f8f8f8;
+    display: block;
+}
+
+.swing:after {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+
+
+/* nail */
+
+.swing:before {
+    content: '';
+    border-radius: 50% 50%;
+    background: #000;
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: -14px;
+    left: 54%;
+    z-index: 5;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
+}
+
+
+/* Cake  */
+
+.cake img {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: none;
+    animation: cake ease-in-out 1s linear;
+}
+
+@keyframes cake {
+    0% {
+        left: -20%;
+    }
+    50% {
+        left: 30%;
+    }
+    100% {
+        left: 41%;
+    }
+}
+
+
+/* Butterfly effect  */
+
+.butterfly img {
+    width: 200px;
+    height: 200ox;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: none;
+}
+
+
+/* Wish TYPING */
+
+.wishmesg {
+    font-family: 'Waiting for the Sunrise', cursive;
+    color: #565020;
+    font-size: 30px;
+    letter-spacing: 6px;
+    font-weight: bold;
+    position: absolute;
+    left: 30%;
+    top: 10%;
+    display: none;
+}
+
+
+/* Button Shine Loading */
+
+.btn-shine {
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 22px;
+    font-weight: 600;
+    padding: 12px 48px;
+    color: #fff;
+    background: linear-gradient(to right, #4d4d4d 0, #fff 10%, #4d4d4d 20%);
+    background-position: 0;
+    display: none;
+    text-decoration: none;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 0;
+    }
+    60% {
+        background-position: 180px;
+    }
+    100% {
+        background-position: 180px;
+    }
+}
+
+
+/* Happy 30 Text  */
+
+.hbwrapper {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 18%;
+}
+
+.hbwrapper span {
+    font-size: 100px;
+    display: inline-block;
+    font-family: "Titan One", cursive;
+    color: #fff;
+    text-shadow: 0 0px #f3c623, 0 0px #f2aaaa;
+    transform: translate(0, 100%) rotate(4deg);
+    animation: jump 2s ease-in-out infinite;
+    -webkit-text-stroke-width: 1.25px;
+    -webkit-text-stroke-color: #000;
+}
+
+.hbwrapper span:nth-child(1) {
+    animation-delay: 120ms;
+}
+
+.hbwrapper span:nth-child(2) {
+    animation-delay: 240ms;
+}
+
+.hbwrapper span:nth-child(3) {
+    animation-delay: 360ms;
+}
+
+.hbwrapper span:nth-child(4) {
+    animation-delay: 480ms;
+}
+
+.wrapper span:nth-child(5) {
+    animation-delay: 600ms;
+}
+
+.hbwrapper span:nth-child(6) {
+    animation-delay: 720ms;
+}
+
+.hbwrapper span:nth-child(7) {
+    animation-delay: 840ms;
+}
+
+@keyframes jump {
+    33% {
+        text-shadow: 0 60px #f37121, 0 150px #f2aaaa;
+    }
+    50% {
+        transform: translate(0, 0) rotate(-4deg);
+        text-shadow: 0 0px #8fc0a9, 0 0px #84a9ac;
+    }
+    66.67% {
+        text-shadow: 0 -60px #d54062, 0 -150px #8fc0a9;
+    }
+}
+
+
+/* Heart Btn for Card */
+
+.heart-btn-card {
+    font-size: 1rem;
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    display: none;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Heart Btn for Team Page */
+
+.btn-teampage {
+    background-color: #5a5ab996;
+    padding: 10px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    bottom: 3%;
+    left: 5%;
+    display: block;
+}
+
+.btn-teampage a {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #e9e6ef;
+    text-decoration: none;
+}
+
+
+/* BD Card  */
+
+h4 {
+    font-family: 'Waiting for the Sunrise', cursive;
+    font-size: 26px;
+    line-height: 1px;
+}
+
+.cardtext1 {
+    color: #ee6c5e;
+}
+
+.cardtext2 {
+    color: #ee6c5e;
+}
+
+.card {
+    font-family: 'Waiting for the Sunrise', cursive;
+    background-size: cover;
+    color: darkslategrey;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* width: 300px;
+    height: 400px; */
+    background: transparent;
+    transform-style: preserve-3d;
+    transform: translate(-50%, -50%) perspective(2000px);
+    /* box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5); */
+    transition: 1s;
+    display: none;
+}
+
+.card:hover {
+    transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
+    /* box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5); */
+}
+
+.card:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #f0d1ed;
+    transform-origin: bottom;
+    /* transform: skewX(-45deg); */
+}
+
+.card:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -5px;
+    width: 5px;
+    height: 100%;
+    background: #f0d1ed;
+    transform-origin: left;
+    /* transform: skewY(-45deg); */
+}
+
+.card .imgBox {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-origin: left;
+    transition: .7s;
+}
+
+.card .side {
+    position: absolute;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .7s;
+}
+
+.card .imgBox img {
+    min-width: 250px;
+    max-height: 400px;
+}
+
+.card:hover .imgBox {
+    transform: rotateY(-135deg);
+}
+
+.card .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    padding: 0 0 0 10px;
+    z-index: -1;
+    margin-top: 70px;
+}
+
+.card .details p {
+    font-size: 15px;
+    line-height: 5px;
+    /* transform: rotate(-10deg); */
+    padding: 0 0 0 20px;
+}
+
+.card .details h4 {
+    text-align: center;
+}
+
+.text-right {
+    font-style: bold;
+    font-size: 20px;
+    color: #ee6c5e;
+    margin: 10px;
+    bottom: 30px;
+}
