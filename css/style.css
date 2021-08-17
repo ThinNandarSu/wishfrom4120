@@ -709,19 +709,15 @@ h4 {
     position: absolute;
     top: 50%;
     left: 50%;
-    /* width: 300px;
-    height: 400px; */
     background: transparent;
     transform-style: preserve-3d;
     transform: translate(-50%, -50%) perspective(2000px);
-    /* box-shadow: inset 300px 0 50px rgba(0, 0, 0, .5), 20px 0 60px rgba(0, 0, 0, .5); */
     transition: 1s;
     display: none;
 }
 
 .card:hover {
     transform: translate(-50%, -50%) perspective(2000px) rotate(15deg) scale(1.2);
-    /* box-shadow: inset 20px 0 50px rgba(0, 0, 0, .5), 0 10px 100px rgba(0, 0, 0, .5); */
 }
 
 .card:before {
@@ -733,7 +729,6 @@ h4 {
     height: 5px;
     background: #f0d1ed;
     transform-origin: bottom;
-    /* transform: skewX(-45deg); */
 }
 
 .card:after {
@@ -745,7 +740,6 @@ h4 {
     height: 100%;
     background: #f0d1ed;
     transform-origin: left;
-    /* transform: skewY(-45deg); */
 }
 
 .card .imgBox {
@@ -781,13 +775,12 @@ h4 {
     box-sizing: border-box;
     padding: 0 0 0 10px;
     z-index: -1;
-    margin-top: 70px;
+    margin-top: 50px;
 }
 
 .card .details p {
     font-size: 15px;
     line-height: 5px;
-    /* transform: rotate(-10deg); */
     padding: 0 0 0 20px;
 }
 
