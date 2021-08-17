@@ -699,6 +699,7 @@ h4 {
 
 .cardtext2 {
     color: #ee6c5e;
+    font-size: 16px;
 }
 
 .card {
@@ -791,6 +792,7 @@ h4 {
 }
 
 .card .details h4 {
+    margin-top: 0px;
     text-align: center;
 }
 
@@ -800,4 +802,8 @@ h4 {
     color: #ee6c5e;
     margin: 10px;
     bottom: 30px;
+}
+
+.cardwish {
+    font-size: 15px;
 }
